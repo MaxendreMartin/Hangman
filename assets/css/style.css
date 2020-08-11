@@ -1,1 +1,102 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* No CSS */ /*# sourceMappingURL=style.css.map */
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url("/assets/images/tabelau\ ecole.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section[id="letters"] {
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: grey;
+    max-width: 700px;
+    margin: auto;
+}
+
+section[id="letters"] ul li {
+    border: solid 0.1rem white;
+    border-radius: 0.2rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: 0.2rem;
+    color: white;
+}
+
+section[id="letters"] ul li[class="good"] {
+    background: #00ff00;
+}
+
+section[id="letters"] ul li[class="wrong"] {
+    background: #ff0000;
+}
+
+section[id="letters"] ul li[class="disabled"] {
+    pointer-events: none;
+    cursor: pointer;
+}
+
+section[id="letters"] button {
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+section[id="word_to_find"] figcaption {
+    max-width: 300px;
+    border: solid 0.1rem white;
+    border-radius: 1rem;
+    margin: auto;
+    padding: 1rem;
+    color: white;
+}
+
+section[id="word_to_find"] figcaption > hr {
+    margin: 1rem auto;
+    width: 90%;
+    border-color: white;
+}
+
+section[id="word_to_find"] figcaption,
+section[id="word_to_find"] > p {
+    margin-top: 1rem;
+}
+
+section[id="word_to_find"] > p {
+    letter-spacing: 1rem;
+    color: white;
+}
+
+section[id="word_to_find"] > p.gameover {
+    letter-spacing: 0rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+
+section[id="word_to_find"] > p.Gagner {
+    color: #00ff00;
+}
+
+section[id="word_to_find"] > p.Perdu {
+    color: #ff0000;
+}
+
+section[id="word_to_find"] > p.Gagner::after {
+    content: " \01F603";
+}
+
+section[id="word_to_find"] > p.Perdu::after {
+    content: " \01F625";
+}
